@@ -1,0 +1,206 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: #ebebeb;
+}
+
+a {
+    color: #03264C;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+header nav {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;    
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+}
+
+.header-top .busqueda {
+    width: 50%;
+}
+
+.header-top .logo {
+    width: 50%;
+}
+
+.header-banner img {
+    width: 100%;
+}
+
+main {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main section article {
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+main section article img {
+    width: 100%;
+}
+
+.info-articulo {
+    position: relative;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+.info-articulo i {
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;    
+}
+
+.info-articulo .box-precio {
+    display: flex;
+}
+
+.info-articulo .box-precio .precio {
+    flex: 70%;
+}
+
+.info-articulo .box-precio .descuento {
+    flex: 30%;
+}
+
+.button-menu {
+    text-align: center;
+}
+
+.burger-menu {
+    background-color: #1259c3;
+    color: #fff;
+    padding: 6px;
+    border-radius: 3px;
+    margin: 3px;
+    display: inline-block;
+}
+
+.titular {
+    font-size: 24px;
+}
+
+.precio {
+    font-size: 18px;
+}
+
+.descuento {
+    font-size: 16px;
+    color: #39b54a;
+}
+
+.descripcion {
+    font-size: 16px;
+    color: #666;
+}
+
+footer section {
+    text-align: center;
+}
+
+footer section article i {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 360px) {
+    header nav {
+        display: none;
+    }
+
+    .info-articulo .descripcion {
+        display: none;
+    }
+}
+
+
+@media (min-width: 361px) {
+    .button-menu {
+        display: none;
+    }
+
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        flex: 49%;
+        max-width: 49%;
+    }
+}
+
+@media (min-width: 769px) {
+    header nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu-links, .menu-usuario {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-links li {
+        padding: 14px 14px 14px 0;
+    }
+
+    .menu-usuario li {
+        padding: 14px 0px 14px 14px;
+    }    
+
+    .menu-links {
+        justify-content: flex-start;
+    }
+
+    .menu-usuario {
+        justify-content: flex-end;
+    }
+
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        flex: 24%;
+        max-width: 24%;
+    }
+
+}
